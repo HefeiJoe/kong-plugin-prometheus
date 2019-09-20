@@ -1,8 +1,8 @@
-package = "kong-prometheus-plugin"
-version = "0.5.0-1"
+package = "kong-prometheus-adv-plugin"
+version = "0.1.0-1"
 
 source = {
-  url = "git://github.com/Kong/kong-plugin-prometheus",
+  url = "https://github.com/HefeiJoe/kong-plugin-prometheus",
   tag = "0.5.0"
 }
 
@@ -19,11 +19,11 @@ dependencies = {
 build = {
   type = "builtin",
   modules = {
-    ["kong.plugins.prometheus.api"] = "kong/plugins/prometheus/api.lua",
-    ["kong.plugins.prometheus.exporter"] = "kong/plugins/prometheus/exporter.lua",
-    ["kong.plugins.prometheus.handler"] = "kong/plugins/prometheus/handler.lua",
-    ["kong.plugins.prometheus.prometheus"] = "kong/plugins/prometheus/prometheus.lua",
-    ["kong.plugins.prometheus.serve"] = "kong/plugins/prometheus/serve.lua",
-    ["kong.plugins.prometheus.schema"] = "kong/plugins/prometheus/schema.lua",
+    ["kong.plugins.prometheus-adv.api"] = "kong/plugins/prometheus-adv/api.lua",
+    ["kong.plugins.prometheus-adv.exporter"] = "kong/plugins/prometheus-adv/exporter.lua",
+    ["kong.plugins.prometheus-adv.handler"] = "kong/plugins/prometheus-adv/handler.lua",
+    ["kong.plugins.prometheus-adv.prometheus"] = "kong/plugins/prometheus-adv/prometheus.lua",
+    ["kong.plugins.prometheus-adv.serve"] = "kong/plugins/prometheus-adv/serve.lua",
+    ["kong.plugins.prometheus-adv.schema"] = "kong/plugins/prometheus-adv/schema.lua",
   }
 }
