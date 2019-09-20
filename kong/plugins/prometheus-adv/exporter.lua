@@ -45,7 +45,7 @@ local function init()
   -- per service/route
   metrics.status = prometheus:counter("http_status",
                                       "HTTP status codes per service/route in Kong",
-                                      {"code", "service", "route", "consumer"})
+                                      {"code", "service", "consumer"})
   metrics.latency = prometheus:histogram("latency",
                                          "Latency added by Kong, total " ..
                                          "request time and upstream latency " ..
@@ -75,12 +75,19 @@ local function log(message)
     return
   end
 
-  local route_name
+--[[  local route_name
   if message and message.route then
     route_name = message.route.name or message.route.id
   end
 
-  metrics.status:inc(1, { message.response.status, service_name, route_name })
+  metrics.status:inc(1, { message.response.status, service_name, route_name })]]
+  local consumer
+  if message and message.consumer then
+    consumer = message.consumer.name or message.consumer.id
+  end
+
+  metrics.status:inc(1, { message.response.status, service_name, consumer })
+  --metrics.status:inc(1, { message.response.status, service_name, route_name })
 
   local request_size = tonumber(message.request.size)
   if request_size and request_size > 0 then
