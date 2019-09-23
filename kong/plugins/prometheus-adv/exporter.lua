@@ -91,12 +91,12 @@ local function log(message)
 
   local request_size = tonumber(message.request.size)
   if request_size and request_size > 0 then
-    metrics.bandwidth:inc(request_size, { "ingress", service_name, route_name })
+    metrics.bandwidth:inc(request_size, { "ingress", service_name, consumer })
   end
 
   local response_size = tonumber(message.response.size)
   if response_size and response_size > 0 then
-    metrics.bandwidth:inc(response_size, { "egress", service_name, route_name })
+    metrics.bandwidth:inc(response_size, { "egress", service_name, consumer })
   end
 
   local request_latency = message.latencies.request
