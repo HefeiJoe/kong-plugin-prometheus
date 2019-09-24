@@ -44,7 +44,7 @@ local function init()
 
   -- per service/route
   metrics.status = prometheus:counter("http_status",
-                                      "HTTP status codes per service/route in Kong",
+                                      "HTTP status codes per service/consumer in Kong",
                                       {"code", "service", "consumer"})
   metrics.latency = prometheus:histogram("latency",
                                          "Latency added by Kong, total " ..
@@ -54,7 +54,7 @@ local function init()
                                          DEFAULT_BUCKETS) -- TODO make this configurable
   metrics.bandwidth = prometheus:counter("bandwidth",
                                          "Total bandwidth in bytes " ..
-                                         "consumed per service/route in Kong",
+                                         "consumed per service/consumer in Kong",
                                          {"type", "service", "consumer"})
 end
 
