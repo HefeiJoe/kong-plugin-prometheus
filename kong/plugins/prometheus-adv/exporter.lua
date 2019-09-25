@@ -85,7 +85,7 @@ local function log(message)
     route_name = message.route.name or message.route.id
   end
 
-  metrics.service_status:inc(1, { message.response.status, service_name })
+  metrics.service_status:inc(1, { message.response.status, service_name, route_name })
 
   local consumer
   if message and message.consumer then
