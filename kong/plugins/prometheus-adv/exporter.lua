@@ -48,7 +48,7 @@ local function init()
                                       {"code", "service", "consumer"})
   -- per service
   metrics.service_status = prometheus:counter("service_http_status",
-                                      "HTTP status codes per service/consumer in Kong",
+                                      "HTTP status codes per service in Kong",
                                       {"code", "service"})
 
   metrics.latency = prometheus:histogram("latency",
