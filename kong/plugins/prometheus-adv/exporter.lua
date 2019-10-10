@@ -43,11 +43,11 @@ local function init()
   metrics.memory_stats = memory_stats
 
   -- per service/consumer
-  metrics.status = prometheus:counter("http_status",
+  metrics.status = prometheus:counter("consumer_http_status",
                                       "HTTP status codes per service/consumer in Kong",
                                       {"code", "service", "consumer"})
   -- per service/route
-  metrics.service_status = prometheus:counter("service_http_status",
+  metrics.service_status = prometheus:counter("route_http_status",
                                       "HTTP status codes per service/route in Kong",
                                       {"code", "service", "route"})
 
