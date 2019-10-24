@@ -10,7 +10,7 @@ prometheus.init()
 
 
 local PrometheusHandler = {
-  PRIORITY = 13,
+  PRIORITY = 14,
   VERSION  = "0.5.0",
 }
 
