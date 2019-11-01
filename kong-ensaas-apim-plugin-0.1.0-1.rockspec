@@ -1,5 +1,5 @@
 package = "kong-ensaas-apim-plugin"
-version = "1.0"
+version = "0.1.0-1"
 
 source = {
   url = "https://github.com/HefeiJoe/kong-plugin-prometheus",
