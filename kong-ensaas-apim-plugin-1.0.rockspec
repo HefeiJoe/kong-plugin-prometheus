@@ -1,9 +1,9 @@
 package = "kong-ensaas-apim-plugin"
-version = "1.0.0"
+version = "1.0"
 
 source = {
   url = "https://github.com/HefeiJoe/kong-plugin-prometheus",
-  tag = "1.0.0"
+  tag = "1.0"
 }
 
 supported_platforms = {"linux", "macosx"}
