@@ -1,14 +1,14 @@
-package = "kong-prometheus-adv-plugin"
-version = "0.1.0-1"
+package = "kong-ensaas-apim-plugin"
+version = "1.0.0"
 
 source = {
   url = "https://github.com/HefeiJoe/kong-plugin-prometheus",
-  tag = "0.5.0"
+  tag = "1.0.0"
 }
 
 supported_platforms = {"linux", "macosx"}
 description = {
-  summary = "Prometheus metrics for Kong and upstreams configured in Kong",
+  summary = "Advantech ensaas-apim metrics for Kong and upstreams configured in Kong",
   license = "Apache 2.0",
 }
 
