@@ -1,5 +1,5 @@
 local lapis = require "lapis"
-local prometheus = require "kong.plugins.prometheus-adv.exporter"
+local prometheus = require "kong.plugins.ensaas-apim.exporter"
 
 
 local app = lapis.Application()

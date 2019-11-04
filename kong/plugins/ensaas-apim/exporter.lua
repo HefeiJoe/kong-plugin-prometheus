@@ -15,7 +15,7 @@ local function init()
     return
   end
 
-  prometheus = require("kong.plugins.prometheus-adv.prometheus").init(shm, "kong_")
+  prometheus = require("kong.plugins.ensaas-apim.prometheus").init(shm, "kong_")
 
   -- global metrics
   metrics.connections = prometheus:gauge("nginx_http_current_connections",

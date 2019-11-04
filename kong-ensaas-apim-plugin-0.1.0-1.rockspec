@@ -19,11 +19,11 @@ dependencies = {
 build = {
   type = "builtin",
   modules = {
-    ["kong.plugins.prometheus-adv.api"] = "kong/plugins/prometheus-adv/api.lua",
-    ["kong.plugins.prometheus-adv.exporter"] = "kong/plugins/prometheus-adv/exporter.lua",
-    ["kong.plugins.prometheus-adv.handler"] = "kong/plugins/prometheus-adv/handler.lua",
-    ["kong.plugins.prometheus-adv.prometheus"] = "kong/plugins/prometheus-adv/prometheus.lua",
-    ["kong.plugins.prometheus-adv.serve"] = "kong/plugins/prometheus-adv/serve.lua",
-    ["kong.plugins.prometheus-adv.schema"] = "kong/plugins/prometheus-adv/schema.lua",
+    ["kong.plugins.ensaas-apim.api"] = "kong/plugins/ensaas-apim/api.lua",
+    ["kong.plugins.ensaas-apim.exporter"] = "kong/plugins/ensaas-apim/exporter.lua",
+    ["kong.plugins.ensaas-apim.handler"] = "kong/plugins/ensaas-apim/handler.lua",
+    ["kong.plugins.ensaas-apim.prometheus"] = "kong/plugins/ensaas-apim/prometheus.lua",
+    ["kong.plugins.ensaas-apim.serve"] = "kong/plugins/ensaas-apim/serve.lua",
+    ["kong.plugins.ensaas-apim.schema"] = "kong/plugins/ensaas-apim/schema.lua",
   }
 }

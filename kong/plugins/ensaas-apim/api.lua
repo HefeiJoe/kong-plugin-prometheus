@@ -1,5 +1,5 @@
 local Schema = require("kong.db.schema")
-local prometheus = require "kong.plugins.prometheus-adv.exporter"
+local prometheus = require "kong.plugins.ensaas-apim.exporter"
 
 -- schemas are used to parse parameters, for example: all params in a
 -- form-url-encoded field arrive to the server as strings. But if the provided

@@ -1,4 +1,4 @@
-local prometheus = require "kong.plugins.prometheus-adv.exporter"
+local prometheus = require "kong.plugins.ensaas-apim.exporter"
 local basic_serializer = require "kong.plugins.log-serializers.basic"
 
 
@@ -10,7 +10,7 @@ prometheus.init()
 
 
 local PrometheusHandler = {
-  PRIORITY = 13,
+  PRIORITY = 14,
   VERSION  = "0.5.0",
 }
 
