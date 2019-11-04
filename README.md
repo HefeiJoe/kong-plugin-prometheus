@@ -1,8 +1,8 @@
-# Kong Prometheus Plugin
+# Kong ensaas-apim Plugin
 
 [![Build Status][badge-travis-image]][badge-travis-url]
 
-This plugin exposes metrics in [Prometheus Exposition format](https://github.com/prometheus/docs/blob/master/content/docs/instrumenting/exposition_formats.md).
+This plugin exposes metrics in [ensaas-apim Exposition format](https://github.com/prometheus/docs/blob/master/content/docs/instrumenting/exposition_formats.md).
 
 
 ### Available metrics
