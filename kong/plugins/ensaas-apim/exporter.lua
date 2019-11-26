@@ -90,9 +90,8 @@ local function log(message)
   local consumer
   if message and message.consumer then
     consumer = message.consumer.name or message.consumer.id
+    metrics.status:inc(1, { message.response.status, service_name, consumer })
   end
-
-  metrics.status:inc(1, { message.response.status, service_name, consumer })
 
   local request_size = tonumber(message.request.size)
   if request_size and request_size > 0 then
